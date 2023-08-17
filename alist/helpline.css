@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.content-wrapper {
+  	display: block;
+ 	margin: auto;
+  	max-height: 1298px;
+  	max-width: 1280px;
+}
+
+html{
+	background: url("images/bg.png") no-repeat center center fixed;
+	-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.poem{
+    width: 315px;
+    height: 1221px;
+    margin-top: 40px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4); /* Customize the shadow properties */
+    margin-bottom: 39px;
+}
+
+.controls{
+    margin-top: 26px;
+}
+
+h2{
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding-bottom: 60px;
+}

@@ -2,15 +2,34 @@
 <html>
 	
 	<head>
+		
 		<meta charset="UTF-8">
 		<title>a compilation</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link href="a.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+    	<link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+    	<link rel="icon" href="images/favicon-48x48.png" sizes="48x48" type="image/png">
+		
+			<script>
+        		// Disable right-click on images
+        		document.addEventListener('DOMContentLoaded', function() {
+            		var images = document.getElementsByTagName('img');
+            		for (var i = 0; i < images.length; i++) {
+                images[i].addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                	});
+            	}
+        	});
+    		</script>
+		
 	</head>
 
 	<style>
+		
   		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 		h1 {text-align: center;}
+		
 	</style>
 	
 	<body>
@@ -18,6 +37,7 @@
 	<div class="content-wrapper">
 			
   	  	<h1>stupid things i wrote</h1>
+		
 	  	<center><img src="images/bg.png" width="375" height="503" alt=""/></center>
     	<center><img src="images/compilation.png" width="409" height="71" alt=""/></center>
     	

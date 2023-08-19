@@ -1,30 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
 	
-		<style>
-  			#video-background {
-    		position: fixed;
-    		top: 0;
-    		left: 0;
-    		width: 100%;
-    		height: 100%;
-    		z-index: -1;
-  			}
-		</style>
-
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>secret link</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="a.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+    	<link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+    	<link rel="icon" href="images/favicon-48x48.png" sizes="48x48" type="image/png">
+		
+			<script>
+        		// Disable right-click on images
+        		document.addEventListener('DOMContentLoaded', function() {
+            		var images = document.getElementsByTagName('img');
+            		for (var i = 0; i < images.length; i++) {
+                images[i].addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                	});
+            	}
+        	});
+    		</script>
+		
 	</head>
+
+	<style>
+		
+  		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+		h1 {text-align: center;}
+		
+	</style>
 	
 	<body>
-  		<video id="video-background" autoplay muted loop>
-    	<source src="/images/bg.mp4" type="video/mp4">
-    	Your browser does not support the video tag.
-  		</video>
-  
-		<div>
-    <!-- Your content goes here -->
-  		</div>
+
+		<div class="content-wrapper">
 		
-	</body>
 	
+		
+		</div>
+	
+	</body>
+
 </html>

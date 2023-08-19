@@ -1,33 +1,39 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-
-  .content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-
 .content-wrapper {
   	display: block;
  	margin: auto;
   	max-height: 1298px;
   	max-width: 1280px;
+}
+
+html{
+	background: url("images/bg.png") no-repeat center center fixed;
+	-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.svg-container{
+    width: 227px;
+    height: 198px;
+}
+
+.logo{
+    width: 227px;
+    height: 198px;
+}
+
+.key{
+    width: 90px;
+    height: 90px;
+    margin-top: -144px;
+    padding-top: 0px;
+    padding-bottom: 53px;
+}
+
+.enter{
+    margin-top: 160px;
 }

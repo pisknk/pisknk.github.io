@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.content-wrapper {
+  	display: block;
+ 	margin: auto;
+  	max-height: 1298px;
+  	max-width: 1280px;
+}
+
+html{
+	background: url("images/bg.png") no-repeat center center fixed;
+	-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.svg-container {
+    width: 227px;
+    height: 198px;
+    position: relative; /* Add this for positioning the child elements */
+    margin-top: 100px;
+}
+
+.logo {
+    width: 227px;
+    height: 198px;
+}
+
+.key{
+    width: 90px;
+    height: 90px;
+    margin-top: -144px;
+    padding-top: 0px;
+    padding-bottom: 53px;
+}
+
+.box {
+    width: 306px;
+    height: 234px;
+    margin-top: 390px;    /* Remove the margin-top */
+}
+
+.field {
+    position: relative; /* Add this to make positioning work properly */
+    margin-top: 166px;
+}
+
+/* Add this style to position the image behind the text box */
+.box {
+    width: 306px;
+    height: 234px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.checkbox-container {
+    margin-top: 10px; /* Adjust this value as needed */
+}
+
+.checkbox-container label {
+    margin-left: 5px; /* Adjust this value as needed */
+    cursor: pointer; /* Make the label look clickable */
+	color: #F5F5F5; /* Set label color */
+    font-size: 14px; /* Set font size */
+    font-weight: 400; /* Set font weight */
+	font-family: 'Crimson Text', serif;
+}
+
+#errorMessages {
+    font-size: 14px;
+    color: red;
+}
+
+#result {
+    font-size: 16px;
+    color: green;
+    margin-top: 10px; /* Adjust this value as needed */
+}
+
+.field input[type="password"] {
+    border: none; /* Remove the default border */
+    outline: none; /* Remove the default outline */
+    padding: 8px; /* Adjust padding as needed */
+    border-radius: 4px; /* Rounded corners for the input */
+}

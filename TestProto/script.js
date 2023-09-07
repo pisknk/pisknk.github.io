@@ -69,9 +69,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		resultElement.style.color = "green";
         errorList.innerHTML = "";
 
+        // Redirect after 3 seconds
         setTimeout(function() {
-            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-        }, 3000);
+            window.location.href = "https://example.com"; // Replace with your desired website URL
+        }, 3000); // 3 seconds in milliseconds
     }
 }
 
@@ -159,8 +160,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 		
 		if (password === "4736251") {
-        window.location.href = "https://example.com";
-        return [];
+        window.location.href = "https://example.com"; // Replace with your desired website URL
+        return []; // Return an empty errors array
     	}
 		
         return errors;

@@ -24,6 +24,7 @@ html{
 .logo{
     width: 227px;
     height: 198px;
+    margin-top: 72px;
 }
 
 .key{
@@ -36,4 +37,5 @@ html{
 
 .enter{
     padding-top: 160px;
+    margin-bottom: 181px;
 }

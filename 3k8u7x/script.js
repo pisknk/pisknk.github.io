@@ -159,7 +159,15 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 		
 		if (password === "4736251") {
-        window.location.href = "https://example.com";
+        const allowedRedirects = [
+            "https://example.com",
+        ];
+        
+        const redirectUrl = "https://example.com";
+        if (allowedRedirects.includes(redirectUrl)) {
+            window.location.href = redirectUrl;
+        }
+        
         return [];
     	}
 		

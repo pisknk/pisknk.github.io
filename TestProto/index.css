@@ -56,9 +56,9 @@ html{
     margin-left: 5px; /* Adjust this value as needed */
     cursor: pointer; /* Make the label look clickable */
 	color: #F5F5F5; /* Set label color */
-    font-size: 12px; /* Set font size */
+    font-size: 14px; /* Set font size */
     font-weight: 400; /* Set font weight */
-	font-family: 'Inter', sans-serif;
+	font-family: 'Crimson Text', serif;
 }
 
 .error-list {
@@ -67,13 +67,16 @@ html{
 }
 
 .error-message {
+    color: red; /* Change the color */
+    font-family: Arial, sans-serif; /* Change the font family */
     font-size: 14px; /* Change the font size */
-    padding-right: 23px;
+    text-align: center; /* Center the text horizontally */
+    /* Add other styling properties as needed */
 }
 
 #result {
-    font-size: 12px;
-	font-family: Inter, sans-serif;
+    font-size: 16px;
+    color: green;
     margin-top: 10px; /* Adjust this value as needed */
 }
 
@@ -86,15 +89,8 @@ html{
 
 .mica-box {
     width: 306px;
-    height: 264px;
+    height: 234px;
     background: rgba(23, 23, 23, 0.9); /* Solid white with 0.9 opacity */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
   }
-
-#password {
-	border: none; /* Remove the default border */
-    outline: none; /* Remove the default outline */
-    padding: 8px; /* Adjust padding as needed */
-    border-radius: 4px; /* Rounded corners for the input */
-}

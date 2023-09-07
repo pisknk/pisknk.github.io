@@ -50,28 +50,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function showNextError() {
-    if (currentErrors.length > 0 && currentErrorIndex < currentErrors.length) {
-        resultElement.textContent = "Password has issues";
-        errorList.innerHTML = "";
+        if (currentErrors.length > 0 && currentErrorIndex < currentErrors.length) {
+            // Display the error message
+            const error = currentErrors[currentErrorIndex];
+            const listItem = document.createElement("li");
+            listItem.textContent = error;
+            errorList.appendChild(listItem);
+        } else {
+            // No more errors, show success message
+            resultElement.textContent = "Password is secure";
+            errorList.innerHTML = "";
+        }
+		
+        if (currentErrors.length > 0 && currentErrorIndex < currentErrors.length) {
+            resultElement.textContent = "Password has issues";
+            errorList.innerHTML = "";
 
-        const listItem = document.createElement("li");
-        listItem.textContent = currentErrors[currentErrorIndex];
-        listItem.style.listStyle = "none"; // Remove bullet point
-        listItem.style.color = "red"; // Change the color
-        listItem.style.fontFamily = "Inter, sans-serif"; // Change the font family
-        listItem.style.fontSize = "14px"; // Change the font size
-        // Add other inline styling properties as needed
-        errorList.appendChild(listItem);
-    } else {
-        resultElement.textContent = "Password is secure";
-        errorList.innerHTML = "";
-
-        // Redirect after 3 seconds
-        setTimeout(function() {
-            window.location.href = "https://example.com"; // Replace with your desired website URL
-        }, 3000); // 3 seconds in milliseconds
+            const error = currentErrors[currentErrorIndex];
+            const listItem = document.createElement("li");
+            listItem.textContent = error;
+            errorList.appendChild(listItem);
+        } else {
+            resultElement.textContent = "Password is secure";
+            errorList.innerHTML = "";
+        }
     }
-}
 
     passwordInput.addEventListener("change", function() {
         currentErrorIndex++;

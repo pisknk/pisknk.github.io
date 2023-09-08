@@ -20,7 +20,9 @@ html{
     width: 227px;
     height: 198px;
     position: relative; /* Add this for positioning the child elements */
-    margin-top: 100px;
+    margin-top: 74px;
+    padding-bottom: 4px;
+    margin-bottom: -60px;
 }
 
 .logo {

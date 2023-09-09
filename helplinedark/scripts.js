@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             // Find the poem with the title
-            const poem = data.find(poem => poem.title === "a");
+            const poem = data.find(poem => poem.title === "helpline");
 
             // Check if the poem was found
             if (poem) {

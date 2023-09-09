@@ -11,6 +11,7 @@ html{
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+	background-attachment: fixed;
 }
 
 h1{
@@ -77,4 +78,13 @@ p1{
     margin-left: 34px;
     padding-top: 50px;
     margin-right: 34px;
+}
+
+h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+	font-size: 12px;
+    color: #171717;
+    padding-bottom: 60px;
+    padding-top: 30px;
 }

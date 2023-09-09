@@ -11,18 +11,6 @@
     	<link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
     	<link rel="icon" href="images/favicon-48x48.png" sizes="48x48" type="image/png">
 		
-			<script>
-        		// Disable right-click on images
-        		document.addEventListener('DOMContentLoaded', function() {
-            		var images = document.getElementsByTagName('img');
-            		for (var i = 0; i < images.length; i++) {
-                images[i].addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                	});
-            	}
-        	});
-    		</script>
-		
 	</head>
 	
 	<style>
@@ -50,11 +38,21 @@
 			
 	  	</div></center>
 		
-   				<center><img src="images/poem.png" width="1500" height="8596" class="poem" alt=""/></center>
+   				<div class="mica-box">
+        
+					<h2>Your Poem Title</h2>
+						
+						<p class="poem-text">
+            				<!-- Poem content will be inserted here using JavaScript -->
+        				</p>
+				
+    			</div>
 		
-		<a href="../574195/574195.html"><h2>super secret link</h2></a>
+		<center><a href="../574195/574195.html"><h3>Super Secret Link</h3></a></center>
 		
 	</div>
+		
+		<script src="scripts.js"></script>
 		
 	</body>
 

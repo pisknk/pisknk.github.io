@@ -36,12 +36,14 @@ h2{
 
 .mica-box {
     width: 315px;
-    height: 1221px;
+    height: auto; /* Set the height to auto to match content height */
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(30px);
-    margin: 0 auto; /* Center the .mica-box horizontally */
+    backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px); /* Safari-specific prefix */
+    margin: 0 auto;
 }
+
 
 p1{
 	font-family: 'Inter', sans-serif;
@@ -60,6 +62,9 @@ p1{
     color: #171717;
     margin-left: 34px;
     margin-right: 34px;
+    padding-bottom: 60px;
+    padding-top: 0px;
+    margin-top: -36px;
 }
 
 .mica-box h2 {

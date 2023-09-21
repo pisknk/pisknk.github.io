@@ -1,0 +1,29 @@
+/* styles.css */
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.wallpaper-container {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to bottom right, #000, #fff);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add this to styles.css */
+svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}

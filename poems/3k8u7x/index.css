@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+    /* Fix scroll issue */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+  	display: block;
+ 	margin: auto;
+  	max-height: 1298px;
+  	max-width: 1280px;
+}
+
+html{
+	background: url("images/bg.png") no-repeat center center fixed;
+	-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.svg-container {
+    width: 227px;
+    height: 198px;
+    position: relative; /* Add this for positioning the child elements */
+    margin-top: 74px;
+    padding-bottom: 4px;
+    margin-bottom: -60px;
+}
+
+.logo {
+    width: 227px;
+    height: 198px;
+}
+
+.key{
+    width: 90px;
+    height: 90px;
+    margin-top: -144px;
+    padding-top: 0px;
+    padding-bottom: 53px;
+}
+
+.box {
+    width: 306px;
+    height: 234px;
+    margin-top: 390px;    /* Remove the margin-top */
+}
+
+.field {
+    position: relative;
+    padding-top: 73px;
+    margin-top: 123px;
+}
+
+.checkbox-container {
+    margin-top: 10px; /* Adjust this value as needed */
+}
+
+.checkbox-container label {
+    margin-left: 5px; /* Adjust this value as needed */
+    cursor: pointer; /* Make the label look clickable */
+	color: #F5F5F5; /* Set label color */
+    font-size: 12px; /* Set font size */
+    font-weight: 400; /* Set font weight */
+	font-family: 'Inter', sans-serif;
+}
+
+.error-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.error-message {
+    font-size: 14px; /* Change the font size */
+    padding-right: 23px;
+}
+
+#result {
+    font-size: 12px;
+	font-family: Inter, sans-serif;
+    margin-top: 10px; /* Adjust this value as needed */
+}
+
+.field input[type="password"] {
+    border: none; /* Remove the default border */
+    outline: none; /* Remove the default outline */
+    padding: 8px; /* Adjust padding as needed */
+    border-radius: 4px; /* Rounded corners for the input */
+}
+
+.mica-box {
+    width: 306px;
+    height: 264px;
+    background: rgba(23, 23, 23, 0.9); /* Solid white with 0.9 opacity */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-bottom: 30px;
+  }
+
+#password {
+	border: none; /* Remove the default border */
+    outline: none; /* Remove the default outline */
+    padding: 8px; /* Adjust padding as needed */
+    border-radius: 4px; /* Rounded corners for the input */
+}

@@ -62,13 +62,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Display the timer and update it every second.
             timer.style.display = "block";
-            timer.innerText = `Message will disappear in ${countdown} ${countdown === 1 ? 'second' : 'seconds'}`;
+            timer.innerText = `Submit another vent in ${countdown} ${countdown === 1 ? 'second' : 'seconds'}`;
 
             const countdownInterval = setInterval(function () {
                 countdown--;
 
                 // Update the timer text.
-                timer.innerText = `Message will disappear in ${countdown} ${countdown === 1 ? 'second' : 'seconds'}`;
+                timer.innerText = `Submit another vent in ${countdown} ${countdown === 1 ? 'second' : 'seconds'}`;
 
                 if (countdown <= 0) {
                     // Clear the interval when the countdown reaches 0.

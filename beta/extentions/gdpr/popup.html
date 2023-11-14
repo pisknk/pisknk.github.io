@@ -8,20 +8,9 @@
         <title>Venting Machine</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="icon" href="images/favicon-48x48.png" sizes="48x48" type="image/png">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWQZ7S9N0H"></script>
-
-		<script>
-
-			window.dataLayer = window.dataLayer || [];
-						function gtag(){dataLayer.push(arguments);}
-						gtag('js', new Date());
-				
-						gtag('config', 'G-NWQZ7S9N0H');
-		
-        </script>
+        <link rel="icon" href="images/icon16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="images/icon48.png" sizes="48x48" type="image/png">
+        <link rel="icon" href="images/icon128.png" sizes="128x128" type="image/png">
 
     </head>
 
@@ -42,12 +31,16 @@
 
             <center><textarea id="frustrationInput" placeholder="What do you feel?"></textarea></center>
             
-            <center><button class="submit" id="submitBtn">Rant!</button>
-            <button class="archives" id="viewArchivesBtn">View Archives</button>
+            <center>
+                
+                <button class="submit" id="submitBtn">Rant!</button>
+                <button class="archives" id="viewArchivesBtn">View Archives</button>
 
-            <label>
-                <input type="checkbox" id="saveToArchive"> Save to Rant Archive
-            </label></center>
+                <label>
+                    <input type="checkbox" id="saveToArchive"> Save to Rant Archive
+                </label>
+        
+            </center>
         
         </div>
 

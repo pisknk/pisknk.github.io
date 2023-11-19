@@ -18,8 +18,8 @@ jobs:
           # Use $API_KEY in your commands or scripts
           # Run your build or deploy commands here
 
-      - name: Checkout code
-        uses: actions/checkout@v2
+          - name: Checkout code
+          uses: actions/checkout@v2.4.3
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

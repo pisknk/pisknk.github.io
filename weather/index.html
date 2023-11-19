@@ -145,7 +145,7 @@
 
     <script>
 
-      const apiKey = 'API_KEY';
+      const apiKey = '${{ secrets.API_KEY }}';
       const weatherInfoElem = document.getElementById('weatherInfo');
 
       function getWeather() {

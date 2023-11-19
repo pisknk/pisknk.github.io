@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,10 +16,13 @@ jobs:
         run: |
           echo "My secret API key is $API_KEY"
           # Use $API_KEY in your commands or scripts
-          # For example:
-          # Replace the following with your actual build commands
-          npm install
-          npm run build
-          # Replace the following with your actual deployment commands using $API_KEY
-          echo "Deploying using API key: $API_KEY"
-          # Your deployment commands here
+          # Run your build or deploy commands here
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./weather

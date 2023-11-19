@@ -144,26 +144,27 @@
     </div>
 
     <script>
-      function getWeather() {
-        const city = document.getElementById('cityInput').value.trim();
-        const weatherInfoElem = document.getElementById('weatherInfo');
-        if (city === '') {
-          weatherInfoElem.innerHTML = 'Please enter a city name.';
-          return;
-        }
-    
-        fetch('/api/getWeather?city=' + city)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.json();
-          })
-          .then(data => {
-            const weatherDescription = data.weather[0].description.toLowerCase();
-            let message = '';
-    
-            switch (true) {
+const weatherInfoElem = document.getElementById('weatherInfo');
+
+function getWeather() {
+  const city = document.getElementById('cityInput').value.trim();
+  if (city === '') {
+    weatherInfoElem.innerHTML = 'Please enter a city name.';
+    return;
+  }
+
+  fetch(`/api/getWeather?city=${city}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const weatherDescription = data.weather[0].description.toLowerCase();
+      let message = '';
+
+      switch (true) {
               case weatherDescription.includes('rain'):
                 message = 'Yup. It\'s Raining';
                 changeBackground('rain.png');
@@ -194,36 +195,38 @@
                 changeBackground('thunderstorm.png');
                 changeImage('thunderstorm-image.webp');
                 break;
-    
               default:
                 message = 'Go outside to check if it\'s raining or not!';
                 changeBackground('outside.png');
                 changeImage('outside.webp');
                 break;
             }
-    
-            weatherInfoElem.innerHTML = message;
-          })
-          .catch(error => {
-            console.error('Error fetching weather data:', error);
-            weatherInfoElem.innerHTML = 'Failed to fetch weather data. Check console for details.';
-            changeBackground('outside.png');
-            changeImage('error.webp');
-          });
-      }
-    
-      function changeBackground(imageName) {
-        document.body.classList.add('fade-transition');
-        setTimeout(() => {
-          document.body.style.backgroundImage = `url('images/${imageName}')`;
-          document.body.classList.remove('fade-transition');
-        }, 100);
-      }
-    
-      function changeImage(imageName) {
-        const weatherImageElem = document.getElementById('weatherImage');
-        weatherImageElem.src = `images/${imageName}`;
-      }
+
+      weatherInfoElem.innerHTML = message;
+    })
+    .catch(error => {
+      console.error('Error fetching weather data:', error);
+      weatherInfoElem.innerHTML = 'Failed to fetch weather data. Check console for details.';
+      changeBackground('outside.png');
+      changeImage('error.webp');
+    });
+}
+
+// Function to change the background
+function changeBackground(imageName) {
+  document.body.classList.add('fade-transition');
+  setTimeout(() => {
+    document.body.style.backgroundImage = `url('images/${imageName}')`;
+    document.body.classList.remove('fade-transition');
+  }, 100);
+}
+
+// Function to change the weather image
+function changeImage(imageName) {
+  const weatherImageElem = document.getElementById('weatherImage');
+  weatherImageElem.src = `images/${imageName}`;
+}
+
     </script>
 
   </body>

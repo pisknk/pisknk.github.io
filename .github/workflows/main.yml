@@ -1,4 +1,4 @@
-name: API key
+name: Build and Deploy
 
 on:
   push:
@@ -16,4 +16,10 @@ jobs:
         run: |
           echo "My secret API key is $API_KEY"
           # Use $API_KEY in your commands or scripts
-          # Run your build or deploy commands here
+          # For example:
+          # Replace the following with your actual build commands
+          npm install
+          npm run build
+          # Replace the following with your actual deployment commands using $API_KEY
+          echo "Deploying using API key: $API_KEY"
+          # Your deployment commands here

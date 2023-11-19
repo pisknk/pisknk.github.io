@@ -144,20 +144,15 @@
     </div>
 
     <script>
-
-      const apiKey = '5f3523d3f01ff2cc3e2edb06ad563fb6';
-      const weatherInfoElem = document.getElementById('weatherInfo');
-
       function getWeather() {
         const city = document.getElementById('cityInput').value.trim();
+        const weatherInfoElem = document.getElementById('weatherInfo');
         if (city === '') {
           weatherInfoElem.innerHTML = 'Please enter a city name.';
           return;
         }
-
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-        fetch(apiUrl)
+    
+        fetch('/api/getWeather?city=' + city)
           .then(response => {
             if (!response.ok) {
               throw new Error('Network response was not ok');
@@ -167,7 +162,7 @@
           .then(data => {
             const weatherDescription = data.weather[0].description.toLowerCase();
             let message = '';
-
+    
             switch (true) {
               case weatherDescription.includes('rain'):
                 message = 'Yup. It\'s Raining';
@@ -199,13 +194,14 @@
                 changeBackground('thunderstorm.png');
                 changeImage('thunderstorm-image.webp');
                 break;
+    
               default:
                 message = 'Go outside to check if it\'s raining or not!';
                 changeBackground('outside.png');
                 changeImage('outside.webp');
                 break;
             }
-
+    
             weatherInfoElem.innerHTML = message;
           })
           .catch(error => {
@@ -215,7 +211,7 @@
             changeImage('error.webp');
           });
       }
-
+    
       function changeBackground(imageName) {
         document.body.classList.add('fade-transition');
         setTimeout(() => {
@@ -223,12 +219,11 @@
           document.body.classList.remove('fade-transition');
         }, 100);
       }
-
+    
       function changeImage(imageName) {
-      const weatherImageElem = document.getElementById('weatherImage');
-      weatherImageElem.src = `images/${imageName}`;
-    }
-      
+        const weatherImageElem = document.getElementById('weatherImage');
+        weatherImageElem.src = `images/${imageName}`;
+      }
     </script>
 
   </body>

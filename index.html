@@ -1,135 +1,82 @@
-<!DOCTYPE html>
-
 <html>
     
     <head>
   
         <meta charset="UTF-8">
-        <title>Welcome Home!</title>
-        <link href="home.css" rel="stylesheet" type="text/css">
+        <title>Welcome Home.</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="icon" href="images/favicon-48x48.png" sizes="48x48" type="image/png">
+        <link rel="icon" href="images/16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="images/32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="images/48.png" sizes="48x48" type="image/png">
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWQZ7S9N0H"></script>
 
 		<script>
-
-			window.dataLayer = window.dataLayer || [];
+            
+            window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
 				
 						gtag('config', 'G-NWQZ7S9N0H');
-		</script>
+		
+        </script>
 
     </head>
 
-    <style>
-  	
-		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-  		@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-		
-	</style>
-
     <body>
-  
+
         <div class="content-wrapper">
 
-            <div class="popup" id="popup">
+            <div class="main">
+
+                <img src="images/sunset.png" width="482" height="858" class="sunset">
                 
-                <div class="popup-content">
+                <h1>Neil's</h1>
+                <h2>little playpen</h2>
                 
-                    <img src="images/exclaim.png" class="excl">
-                    <p1>This website is made with a mobile-first approach.</p1>
-                    <p2>You're viewing this from a desktop <br>browser, this site doesn't support it yet.<br><br>You still can view the website, though <br>there might be issues. Contact the webmaster here if you have questions.<br><br>Still learning how to make websites <br>cross compatible, sorry!</p2>
-                    <button class="close-button" id="close-button">Continue</button>
+                <img src="images/plant.png" width="258" height="858" class="plant">
                 
+                <div class="sidebar-container">
+                    
+                    <h3 id="sidebar-toggle">🍔</h3>
+                
+                    <div class="sidebar">
+                        <!-- Sidebar content -->
+                    <ul>
+
+                        <!-- Add About Me and Donations in the next update!!-->
+                        <li><button id="dark-mode-toggle">🌙 Dark Mode</button></li>
+                        <li><a href="https://github.com/pisknk">👾 Repositories</a></li>
+                        <li><a href="https://pisknk.github.io/basic">🕸️ Request Basic Site</a></li>
+                        <li id="close-sidebar"><a href="#">⬅️ Back</a></li>
+                        
+                    </ul>
+                    
+                    </div>
+            
                 </div>
             
-            </div>  
-        
-            <img src="images/bg.png" width="375" height="668" alt="" class="backdrop">
-            <h1>little playpen</h1>
-            <h2>Neil's</h2>
-            <h3 class="swipe-text">Swipe up for more</h3>
-    
-                <div class="shadow"></div>
-                    
-            <img src="images/plant.png" width="187" height="694" alt="" class="plant">
-            
-            <div class="titlebar" id="titlebar">
-                    
-                <h4>stupid things i wrote</h4>
-        
             </div>
 
-                <div class="about" id="about">
+            <div class="projects">
 
-                    <div class="platter1">
-                    
-                        <h5>MEET THE WEBMASTER</h5>
-                        <h6>Oh, hi! Thanks for visiting my site!<br>
-                            Wanna know more about me?<br>
-                            Tap here!</h6>
-                        <img src="images/me.png" width="95" height="95" alt="" class="me">
-                    
-                    </div>
+                <div class="box"></div>
+                
+                <h4>Home Grown Projects</h4>
+                
+                <a href="https://pisknk.github.io/acompilation/"><img src="images/platter1.png" class="platter1"></a>
+                <a href="https://microsoftedge.microsoft.com/addons/detail/venting-machine/mchfkakjgoelalnonhncimidbkedemmm"><img src="images/platter2.png" class="platter2"></a>
+                <a href="https://pisknk.github.io/weather/"><img src="images/platter3.png" class="platter3"></a>
+                <a href="https://www.figma.com/proto/1lBIOzRQirWRrKzzdfQxoA/Amity-Design-Language?page-id=0%3A1&type=design&node-id=1-2&viewport=414%2C287%2C0.22&t=Y8gWkCQcDBLeVQ2Q-1&scaling=contain&mode=design"><img src="images/platter4.png" class="platter4"></a>
 
-                    <a href="https://chainsawed.github.io/poem/574195"><div class="platter2">
-
-                        <h7>Secure Password Generator</h7>
-
-                    </div></a>
-
-                    <a href="https://chainsawed.github.io/acompilation"><div class="platter3">
-                        
-                        <div class="a">
-
-                            <h8>a</h8>
-                            <h9>COMPILATION</h9>
-
-                        </div>
-
-                    </div></a>
-
-                    <div class="platter4">
-
-                        <div class="amity">
-
-                            <h10>Amity DL</h10><br>
-                            <h11>Where design meets harmony</h11>
-
-                        </div>
-
-                        <div class="getbeta">
-
-                            <h12>Figma Templates Available</h12>
-
-                        </div>
-
-                    </div>
-
-                    <div class="platter5">
-                        
-                        <h13>STAY TUNED!</h13>
-                        <h14>There are more fun <br> stuff coming soon!</h14>
-
-                    </div>
-
-                </div>
-
-            <div class="collage"></div>
-
-            <div class="chill">
-
-                <h15>you scrolled so far, you found us chillin</h15>
+                <a href="#" class="explore-link"><h6>EXPLORE BETA PROJECTS</h6></a>
 
             </div>
 
         </div>
-
+        
     </body>
 
-    <script src="home.js"></script>
+    <script src="script.js"></script>
 
 </html>

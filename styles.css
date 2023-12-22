@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@media (min-width: 1024px){
+
+.content-wrapper {
+  	display: block;
+ 	  margin: auto;
+  	max-height: 1298px;
+  	max-width: 1280px;
+}
+
+body {
+  transition: background-color 0.5s ease;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sunset{
+    width: 482px;
+    height: 858px;
+    flex-shrink: 0;
+}
+
+h1, h2, h3{
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+h1{
+    top: -40rem;
+    left: 6rem;
+}
+
+h2{
+    top: -39.90rem;
+    left: 6rem;
+}
+
+.plant{
+    position: relative;
+    width: 258px;
+    height: 858px;
+    flex-shrink: 0;
+    left: 13.10rem;
+    top: -60rem;
+}
+
+h3{
+    top: -68rem;
+    left: 5rem;
+}
+
+.box{
+    position: relative;
+    content: url('images/box.png');
+    top: -110rem;
+    left: 33rem;
+    width: 652.276px;
+    height: 477px;
+    flex-shrink: 0;
+}
+
+h4{
+    position: relative;
+    color: #171717;
+    text-align: center;
+    font-family: Crimson Text;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: -143.70rem;
+    left: 14.86rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 2.66rem;
+    left: 2.56rem;
+    width: 25.90rem;
+    height: 47.84rem; 
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 99.99%, rgba(217, 217, 217, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(46.45000076293945px);
+    padding-top: 20px;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .sidebar h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20rem;
+    margin-left: 3rem;
+    color: #FFF;
+    font-family: Consolas;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 40px;
+  }
+  
+  .sidebar ul li a{
+    color: #FFF;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease; 
+    overflow: hidden;
+  }
+  
+  .sidebar ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFF;
+    transition: width 0.3s ease;
+    transform-origin: bottom left;
+  }
+
+  .sidebar ul li a:hover::before {
+      width: 100%;
+  }
+  
+  .show-sidebar {
+    opacity: 1; 
+    pointer-events: auto; 
+    transform: translateX(0); 
+  }
+
+.platter1, .platter2, .platter3, .platter4{
+  position: relative;
+  width: 16rem;
+  height: 7.875rem;
+  flex-shrink: 0;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  top: -142.60rem;
+  left: 33.60rem;
+}
+
+.platter3, .platter4{
+  top: -132rem;
+  left: -3.90rem;
+}
+
+h6{
+  position: relative;
+  color: #171717;
+  font-family: Consolas;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  top: -134.80rem;
+  left: 48rem;
+}
+
+.explore-link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.explore-link:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.dark-theme {
+  background-color: #171717;
+  color: #fff;
+}
+
+.dark-theme .sidebar {
+
+}
+
+.dark-theme h6{
+  color: #fff;
+}
+
+.dark-theme h4{
+  color: #ffffff;
+}
+
+.dark-theme .box{
+  content: url('images/boxd.png');
+}
+
+body.dark-theme {
+  background-color: #171717;
+}
+
+button {
+  background: none;
+  color: #fff;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+}
+
+/* Desktop styles there ^ */
+
+/* Mobile styles here*/
+
+@media (max-width: 768px) {
+
+  .content-wrapper {
+  	display: block;
+ 	  margin: auto;
+  	max-height: 1561px; !important
+  	max-width: 768px;
+}
+
+  body {
+    transition: background-color 0.5s ease;
+    overflow-x: hidden;
+    max-height: 200px !important; /* Forcefully setting the maximum height of the body for mobile view */
+    overflow-y: scroll;
+  }
+  
+  .sunset{
+    position: relative;
+    width: 30.9375rem;
+    height: 55.125rem;
+    flex-shrink: 0;
+    top: -3rem;
+    left: -3rem;
+  }
+  
+  h1, h2, h3{
+    position: relative;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  h1{
+      top: -45rem;
+      left: 3rem;
+  }
+  
+  h2{
+      top: -47rem;
+      left: 3rem;
+  }
+  
+  .plant{
+      position: relative;
+      width: 258px;
+      height: 858px;
+      flex-shrink: 0;
+      left: 11rem;
+      top: -68.84rem;
+  }
+  
+  h3{
+    top: -120rem;
+    left: 20rem;
+  }
+  
+  .box{
+      position: relative;
+      content: url('images/boxm.png');
+      left: 0.16rem;
+      top: -72rem;
+      width: 24.5rem;
+      height: 61.5625rem;
+      flex-shrink: 0;
+  }
+  
+  h4{
+      position: relative;
+      color: #171717;
+      text-align: center;
+      font-family: Crimson Text;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      top: -137.40rem;
+  }
+  
+  .sidebar {
+      position: fixed;
+      top: 0rem;
+      left: -3rem;
+      width: 30.9375rem;
+      height: 55.125rem;
+      background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 99.99%, rgba(217, 217, 217, 0.00) 100%);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(46.45000076293945px);
+      padding-top: 20px;
+      opacity: 0;
+      pointer-events: none; 
+      transition: opacity 0.3s ease, transform 0.3s ease; 
+    }
+    
+    .sidebar h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.5rem;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 10rem;
+      margin-left: 6rem;
+      color: #FFF;
+      font-family: Consolas;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    
+    .sidebar ul li {
+      margin-bottom: 40px;
+    }
+    
+    .sidebar ul li a{
+      color: #FFF;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease; 
+      overflow: hidden;
+    }
+    
+    .sidebar ul li a::before {
+      content: '';
+      position: absolute;
+      bottom: -2px; 
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #FFF;
+      transition: width 0.3s ease;
+      transform-origin: bottom left;
+    }
+  
+    .sidebar ul li a:hover::before {
+        width: 100%;
+    }
+    
+    .show-sidebar {
+      opacity: 1; 
+      pointer-events: auto; 
+      transform: translateX(0); 
+    }
+  
+  .platter1, .platter2, .platter3, .platter4{
+    position: relative;
+    width: 21.9375rem;
+    height: 10.8125rem;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    top: -138rem;
+    left: -1rem;
+  }
+  
+  .platter3, .platter4{
+    top: -138rem;
+    left: -1rem;
+  }
+  
+  h6{
+    position: relative;
+    color: #171717;
+    text-align: center;
+    font-family: Consolas;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    top: -140rem;
+    left: 0.30rem;
+  }
+  
+  .explore-link {
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  .explore-link:visited {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .dark-theme {
+    background-color: #171717;
+    color: #fff;
+  }
+  
+  .dark-theme .sidebar {
+  
+  }
+  
+  .dark-theme h6{
+    color: #fff;
+  }
+  
+  .dark-theme h4{
+    color: #ffffff;
+  }
+  
+  .dark-theme .box{
+    content: url('images/boxd.png');
+  }
+  
+  body.dark-theme {
+    background-color: #171717;
+  }
+  
+  button {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+
+
+}
